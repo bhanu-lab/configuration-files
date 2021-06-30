@@ -1,0 +1,51 @@
+configuration {
+  drun-display-format: "{name}";
+  font: "MonoLisa Book 16";
+  modi: "drun";
+  fullscreen: false;
+  sidebar-mode: false;
+  disable-history: true;
+}
+
+* {
+  bg: #222222;
+  bg-alt: #222222;
+  fg: #ff4545;
+  fg-alt: #ffffff;
+
+  background-color: @bg;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element, entry, prompt {
+  padding: 10;
+  text-color: @fg-alt;
+}
+
+element selected {
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+  lines: 2;
+  scrollbar: false;
+}
+
+mainbox {
+  children: [listview];
+}
+
+window {
+  border: 2;
+  border-color: @fg-alt;
+  padding: 10;
+  transparency: "real";
+}
