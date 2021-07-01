@@ -20,7 +20,7 @@ starship init fish | source
 set -U __done_min_cmd_duration 10000
 
 # Plugin
-#- ctr+f -> file search
+#- ctrl+f -> file search
 set YSU_MESSAGE_POSITION "before"
 mcfly init fish | source # ctrl+r
 
