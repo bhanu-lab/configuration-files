@@ -6,10 +6,11 @@ set PATH /home/user/.cargo/bin $PATH
 set PATH /home/user/.local/bin $PATH
 set PATH /home/user/go/bin $PATH
 set PATH /home/user/.npm-global/bin $PATH
-set PATH /var/lib/snapd/snap/bin $PATH
+#set PATH /var/lib/snapd/snap/bin $PATH
 #set PATH /home/linuxbrew/.linuxbrew/bin $PATH
 #set PATH /home/user/.emacs.d/bin $PATH
 #set PATH /usr/lib/ccache/bin/ $PATH
+set PATH /home/user/.nimble/bin $PATH
 set PATH /home/user/.guix-profile/bin $PATH
 set PATH /home/user/.deno/bin $PATH
 
@@ -137,6 +138,7 @@ alias git-pull-all="/bin/ls | xargs -I{} git -C {} pull"
 alias GG="git add . ; git commit -m"
 alias GGG="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
 alias gsignall="git rebase -i --root --exec 'git commit --amend --no-edit --no-verify -S'"
+alias ggraph="git bp -v firefox"
 
 # PORTAGE #
 # Emerge
@@ -222,8 +224,9 @@ export DOTNET_CLI_TELEMETRY_OPTOUT="true"
 #alias wine="strat -r arch wine"
 alias proton="STEAM_COMPAT_DATA_PATH='/home/user/.proton' PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS='1' strat -r arch /home/user/.steam/steam/steamapps/common/Proton\ 5.13/proton run"
 
+
 # SSH
-#- eval (keychain --eval --agents ssh -Q --quiet ~/.ssh/id_ed25519 --nogui)
+alias git-ssh-verify="eval (keychain --eval --agents ssh -Q --quiet ~/.ssh/id_ed25519 --nogui)"
 # content has to be in .config/fish/config.fish
 # if it does not exist, create the file
 #setenv SSH_ENV $HOME/.ssh/environment
