@@ -1,0 +1,19 @@
+[user]
+	email = molese@protonmail.com
+	name = molese
+	signingkey = 3665D1C872B9A0284B06136C61C53544E95B132E
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = prime
+[commit]
+	gpgsign = true
+[gui]
+	encoding = UTF-8
+[alias]
+	bp = big-picture
+[core]
+	editor = micro
