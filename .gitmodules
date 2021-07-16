@@ -1,3 +1,6 @@
 [submodule "exherbo/paludis"]
 	path = exherbo/paludis
 	url = https://github.com/m0lese/paludis-config
+[submodule "gentoo/portage"]
+	path = gentoo/portage
+	url = https://github.com/m0lese/portage-config
