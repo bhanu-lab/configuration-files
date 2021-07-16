@@ -1,0 +1,3 @@
+[submodule "exherbo/paludis"]
+	path = exherbo/paludis
+	url = https://github.com/m0lese/paludis-config
