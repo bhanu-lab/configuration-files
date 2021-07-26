@@ -4,3 +4,6 @@
 [submodule "gentoo/portage"]
 	path = gentoo/portage
 	url = https://github.com/m0lese/portage-config
+[submodule "kernel/Linux-Misc"]
+	path = kernel/Linux-Misc
+	url = https://github.com/m0lese/Linux-Misc
