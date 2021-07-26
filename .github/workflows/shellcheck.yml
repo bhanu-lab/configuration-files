@@ -1,0 +1,16 @@
+name: shellcheck
+
+on:
+  push:
+    branches: [ prime ]
+  pull_request:
+    branches: [ prime ]
+
+jobs:
+  shellcheck:
+    name: Shellcheck
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run ShellCheck
+      uses: ludeeus/action-shellcheck@master
