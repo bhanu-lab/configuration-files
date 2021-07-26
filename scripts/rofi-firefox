@@ -1,0 +1,135 @@
+#!/bin/bash
+# shellcheck disable=SC2001
+SQL="SELECT b.title || \" | \" ||  p.url  FROM moz_bookmarks b JOIN moz_places p ON b.fk = p.id WHERE b.fk is not null AND b.title <> '' AND url <> '' AND url NOT LIKE 'place:%'"
+
+FIREFOX_PROFILE="mdup32fn.default-release"
+
+PROFILE_DB="$HOME/.mozilla/firefox/${FIREFOX_PROFILE}/places.sqlite"
+TMP_PLACES="/tmp/places"
+
+# Avoid db lock
+cp -f "${PROFILE_DB}" "${TMP_PLACES}"
+ENTRIES=$(sqlite3 "${TMP_PLACES}" "${SQL}" | rofi -i -dmenu -p "Firefox")
+
+read -ra ADDR <<<"${ENTRIES}"
+for i in "${ADDR[@]}"; do
+	URL="${i}"
+done
+
+if [[ ${ADDR[0]} == "" ]]; then
+	rm "${TMP_PLACES}"
+	exit 0
+fi
+
+UURL() {
+	if ! [[ "${2}" == "" ]]; then
+		URL="${1}${2}"
+	else
+		exclusive=$(echo "$ENTRIES" | sed 's/[^ ]* //')
+		URL="${1}${exclusive}"
+	fi
+}
+
+SITE() {
+	if ! [[ "${2}" == "" ]]; then
+		notify-send 'Firefox' "Searching in ${1}: ${2}"
+	else
+		notify-send 'Firefox' "Searching in ${1}: ${ADDR[1]}"
+	fi
+}
+
+case "${ADDR[0]}" in
+"youtube" | "yt")
+	SITE "YouTube"
+	UURL "https://www.youtube.com/results?search_query="
+	;;
+"github" | "gh")
+	SITE "Github"
+	UURL "https://github.com/search?q="
+	;;
+"gitlab" | "gl")
+	SITE "Gitlab"
+	UURL "https://gitlab.com/search?search="
+	;;
+"zugaina" | "zg" | "p1")
+	SITE "Zugaina"
+	UURL "https://gpo.zugaina.org/Search?search="
+	;;
+"gpackages" | "gpackage" | "p2")
+	SITE "Gentoo Package Database"
+	UURL "https://packages.gentoo.org/packages/search?q="
+	;;
+"book" | "bk" | "zlibrary")
+	SITE "Zlibrary"
+	UURL "https://2lib.org/s/"
+	;;
+"ddgbang" | "bang")
+	SITE "DuckDuckGo Bangs"
+	UURL "https://duckduckgo.com/bang?q="
+	;;
+"searx" | "search" | "ms" | "s")
+	SITE "SearX"
+	UURL "https://searx.info/search?q="
+	;;
+"google" | "g" | "gg" | "s1")
+	SITE "Google"
+	UURL "https://www.google.com/search?q="
+	;;
+"duckduckgo" | "ddg" | "s2")
+	SITE "DuckDuckGo"
+	UURL "https://duckduckgo.com/?q="
+	;;
+"peekier" | "pk" | "s3")
+	SITE "Peekier"
+	UURL "https://peekier.com/#!"
+	;;
+"wikipedia" | "wiki" | "wk")
+	SITE "Wikipedia"
+	UURL "https://en.wikipedia.org/wiki/"
+	;;
+"crates.io" | "crate")
+	SITE "Crates.io"
+	UURL "https://crates.io/search?q="
+	;;
+"docs.rs" | "rustdoc" | "docsrs" | "rdocs" | "docs" | "doc")
+	SITE "Docs.rs"
+	UURL "https://docs.rs/releases/search?query="
+	;;
+"stddoc" | "rustdocstd" | "rsdoc")
+	SITE "Rust STD Nightly Docs"
+	UURL "https://doc.rust-lang.org/nightly/std/?search="
+	;;
+"rexplain" | "explain" | "error")
+	SITE "Rust Compiler Error Index"
+	UURL "https://doc.rust-lang.org/error-index.html#"
+	;;
+"stackoverflow" | "sof" | "codehelp" | "stackoflow")
+	SITE "StackOverFlow"
+	UURL "https://stackoverflow.com/search?q="
+	;;
+"reddit" | "rdd" | "rd")
+	SITE "Reddit"
+	UURL "https://www.reddit.com/search/?q="
+	;;
+"gbub" | "bug" | "gbugzilla" | "bugzilla")
+	SITE "Gentoo Bugzilla"
+	UURL "https://bugs.gentoo.org/"
+	;;
+"epkg" | "epackage" | "epackages" | "p3")
+	SITE "Exherbo Packages"
+	exclusive=$(echo "$ENTRIES" | sed 's/[^ ]* //')
+	UURL "https://www.google.com/search?q=" "${exclusive} site:git.exherbo.org"
+	;;
+*)
+	if ! [[ "$URL" == http* ]]; then
+		SITE "Google"
+		UURL "https://www.google.com/search?q=" "${ENTRIES}"
+	else
+		notify-send 'Firefox' "Opening: ${URL}"
+	fi
+	;;
+esac
+
+firefox "$URL"
+
+rm "${TMP_PLACES}"
