@@ -1,11 +1,11 @@
 # <device>                                <dir> <type> <options> <dump> <fsck>
 
 # System
-UUID=7654e9d4-e703-4610-885d-6956f88db1be / btrfs defaults,noatime,autodefrag,ssd,discard=async,space_cache,commit=56 0 0
+UUID=7654e9d4-e703-4610-885d-6956f88db1be / btrfs defaults,noatime,autodefrag,ssd,discard=async,space_cache 0 0
 UUID=D988-4956 /boot vfat noatime 0 0
 
 # Mounts
-UUID=7e517470-488a-462e-98cf-9b94b2c75816 /mnt/disk btrfs defaults,noatime,autodefrag,nossd,space_cache,commit=56 0 0
+UUID=7e517470-488a-462e-98cf-9b94b2c75816 /mnt/disk btrfs defaults,noatime,autodefrag,nossd,space_cache 0 0
 
 # SWAP
 UUID=9a19c15c-232d-4639-bc34-ecbae2a1179d none swap sw 0 0
