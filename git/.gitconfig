@@ -17,3 +17,5 @@
 	bp = big-picture
 [core]
 	editor = micro
+[pull]
+	rebase = false
