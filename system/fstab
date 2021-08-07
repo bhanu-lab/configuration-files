@@ -8,5 +8,5 @@ UUID=D988-4956 /boot vfat noatime 0 0
 UUID=7e517470-488a-462e-98cf-9b94b2c75816 /mnt/disk btrfs defaults,noatime,autodefrag,nossd,space_cache 0 0
 
 # SWAP
-UUID=9a19c15c-232d-4639-bc34-ecbae2a1179d none swap sw 0 0
-UUID=91686d59-f210-4633-b50c-400c7d3dd695 none swap sw 0 0
+UUID=9a19c15c-232d-4639-bc34-ecbae2a1179d none swap defaults,pri=2 0 0
+UUID=91686d59-f210-4633-b50c-400c7d3dd695 none swap defaults,pri=1 0 0
