@@ -15,7 +15,24 @@
 	encoding = UTF-8
 [alias]
 	bp = big-picture
+	stat = status -sb
+	l = log --oneline
+	c = commit -m
+	unstage = reset HEAD --
+	co = checkout
+	last = log --oneline -1 HEAD
+	b = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	aa = add .
+	o = clone
+	pp = push -f
+	i = init
+	ci = commit --interactive
+	dd = diff --check --dirstat --find-copies --find-renames --histogram --color
+	rb = rebase --interactive @{upstream}
 [core]
 	editor = micro
 [pull]
 	rebase = false
+[help]
+	autocorrect = 25
