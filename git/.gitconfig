@@ -30,6 +30,7 @@
 	ci = commit --interactive
 	dd = diff --check --dirstat --find-copies --find-renames --histogram --color
 	rb = rebase --interactive @{upstream}
+	e = commit --amend
 [core]
 	editor = neovide
 [pull]
