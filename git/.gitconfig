@@ -17,7 +17,6 @@
 	bp = big-picture
 	stat = status -sb
 	l = log --oneline
-	c = commit -m
 	unstage = reset HEAD --
 	co = checkout
 	last = log --oneline -1 HEAD
@@ -32,6 +31,9 @@
 	rb = rebase --interactive @{upstream}
 	e = commit --amend
 	ll = config --get-regexp alias
+	c = "!f() { \
+	         git commit -m $1 -m 'Signed-off-by: molese <molese@protonmail.com>'; \
+	       }; f"
 [core]
 	editor = neovide
 [pull]
