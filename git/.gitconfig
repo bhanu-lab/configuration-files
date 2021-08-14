@@ -28,11 +28,14 @@
 	i = init
 	ci = commit --interactive
 	dd = diff --check --dirstat --find-copies --find-renames --histogram --color
-	rb = rebase --interactive @{upstream}
+	rbm = rebase --interactive @{upstream}
 	e = commit --amend
 	ll = config --get-regexp alias
 	c = "!f() { \
 	         git commit -m $1 -m 'Signed-off-by: molese <molese@protonmail.com>'; \
+	       }; f"
+	rb = "!f() { \
+	          git rebase --interactive HEAD~$1; \
 	       }; f"
 [core]
 	editor = neovide
