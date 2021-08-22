@@ -7,3 +7,9 @@
 [submodule "kernel/Linux-Misc"]
 	path = kernel/Linux-Misc
 	url = https://github.com/m0lese/Linux-Misc
+[submodule "vim/SpaceVim"]
+	path = vim/SpaceVim
+	url = https://github.com/SpaceVim/SpaceVim
+[submodule "emacs/spacemacs"]
+	path = emacs/spacemacs
+	url = https://github.com/syl20bnr/spacemacs
