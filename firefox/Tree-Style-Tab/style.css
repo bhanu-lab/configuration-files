@@ -1,3 +1,5 @@
+/* As of 26-08-2021, works improperly with versions >3.8.4. Latest working version: v3.8.4 */
+
 :root {
     --tab-border-radius: 100px;
     --active-tab-color-a: #6b5874;
