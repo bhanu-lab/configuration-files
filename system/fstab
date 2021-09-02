@@ -1,7 +1,7 @@
 # <device>                                <dir> <type> <options> <dump> <fsck>
 
 # System
-UUID=7654e9d4-e703-4610-885d-6956f88db1be / btrfs defaults,noatime,autodefrag,ssd,discard=async,space_cache 0 0
+UUID=7654e9d4-e703-4610-885d-6956f88db1be / btrfs defaults,noatime,autodefrag,ssd,discard=async,space_cache,compress=zstd:4 0 0
 UUID=D988-4956 /boot vfat noatime 0 0
 
 # Mounts
