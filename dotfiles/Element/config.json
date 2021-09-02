@@ -1,0 +1,29 @@
+{
+    "settingDefaults": {
+        "custom_themes": [
+            {
+            	"name": "Molese Theme",
+            	"is_dark": true,
+            	"colors": {
+            	    "accent-color": "#ff4545",
+            	    "primary-color": "#ff4545",
+            	    "warning-color": "#FC4F68",
+            	
+            	    "sidebar-color": "#181818",
+            	    "roomlist-background-color": "#252525",
+            	    "roomlist-text-color": "#ffffff",
+            	    "roomlist-text-secondary-color": "#b9b9b9",
+            	    "roomlist-highlights-color": "#3b3b3b",
+            	    "roomlist-separator-color": "#121212",
+            	
+            	    "timeline-background-color": "#181818",
+            	    "timeline-text-color": "#FFFFFF",
+            	    "timeline-text-secondary-color": "#777777",
+            	    "timeline-highlights-color": "#252525",
+            	    "reaction-row-button-selected-bg-color": "#222222"
+            	}
+            }
+        ]
+    },
+    "showLabsSettings": true
+}
