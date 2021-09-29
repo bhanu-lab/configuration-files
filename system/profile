@@ -56,3 +56,4 @@ fi
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export XCURSOR_THEME="Bibata-Rainbow-Modern"
 export XCURSOR_SIZE="32"
+export MOZ_WEBRENDER="1"
