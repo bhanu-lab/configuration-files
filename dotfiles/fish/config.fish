@@ -84,6 +84,7 @@ alias rm="rm -v"
 alias mv="mv -v"
 alias cp="cp -v"
 alias ..="cd .. ; l"
+alias mpv="mpv --hwdec=vaapi"
 
 # Misc
 alias t="br -s"
@@ -139,6 +140,7 @@ alias GG="git add . ; git commit -m"
 alias GGG="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
 alias gsignall="git rebase -i --root --exec 'git commit --amend --no-edit --no-verify -S'"
 alias ggraph="git bp -v firefox"
+function gommit; git commit -m "$argv[1]" -m "Signed-off-by: molese <molese@protonmail.com>" ; end
 
 # PORTAGE #
 # Emerge
@@ -187,6 +189,7 @@ alias guix-list="guix package --list-installed"
 
 # Extras
 alias picom-gaming="pkill picom ; picom --config /home/user/.config/picom/picom-gaming.conf"
+alias youtube-dl-mp3="youtube-dl --extract-audio --audio-format mp3"
 
 # Compiler Flags
 export COMMON_FLAGS="-march=native -O3 -pipe"
@@ -199,9 +202,9 @@ export LDFLAGS="-Wl,-O3 -Wl,--as-needed -s -march=native -O3 -pipe"
 #export RUSTFLAGS="-C target-cpu=native -C opt-level=3 -C debuginfo=0 -C link-dead-code=no"
 
 # JOBS
-#export \
-#    MAKEFLAGS="-j4 --no-print-directory" \
-#    CARGO_BUILD_JOBS="4"
+export \
+    MAKEFLAGS="-j4 --no-print-directory" \
+    CARGO_BUILD_JOBS="4"
 
 # SCCACHE
 #export RUSTC_WRAPPER="/usr/bin/sccache"
@@ -213,7 +216,7 @@ export LDFLAGS="-Wl,-O3 -Wl,--as-needed -s -march=native -O3 -pipe"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-#eval /home/user/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+eval /home/user/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
 # Dotnet
@@ -222,7 +225,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT="true"
 
 # Bedrock Linux
 #alias wine="strat -r arch wine"
-alias proton="STEAM_COMPAT_DATA_PATH='/home/user/.proton' PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS='1' strat -r arch /home/user/.steam/steam/steamapps/common/Proton\ 5.13/proton run"
+alias proton="STEAM_COMPAT_DATA_PATH='/home/user/.proton' PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS='1' strat -r arch /home/user/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/Proton\ 5.13/proton run"
 
 
 # SSH
@@ -232,16 +235,16 @@ alias git-ssh-verify="eval (keychain --eval --agents ssh -Q --quiet ~/.ssh/id_ed
 #setenv SSH_ENV $HOME/.ssh/environment
 
 
-#function start_agent                                                                                                                             
+#function start_agent                                                                                                                                                                    
 #    echo "Initializing new SSH agent ..."
 #    ssh-agent -c | sed 's/^echo/#echo/' > $SSH_ENV
 #    echo "succeeded"
-#    chmod 600 $SSH_ENV
+#    chmod 600 $SSH_ENV 
 #    . $SSH_ENV > /dev/null
 #    ssh-add
 #end
 
-#function test_identities                                                                                                                         
+#function test_identities                                                                                                                                                                
 #    ssh-add -l | grep "The agent has no identities" > /dev/null
 #    if [ $status -eq 0 ]
 #        ssh-add
@@ -251,19 +254,19 @@ alias git-ssh-verify="eval (keychain --eval --agents ssh -Q --quiet ~/.ssh/id_ed
 #    end
 #end
 
-#if [ -n "$SSH_AGENT_PID" ]
+#if [ -n "$SSH_AGENT_PID" ] 
 #    ps -ef | grep $SSH_AGENT_PID | grep ssh-agent > /dev/null
 #    if [ $status -eq 0 ]
 #        test_identities
-#    end
+#    end  
 #else
 #    if [ -f $SSH_ENV ]
 #        . $SSH_ENV > /dev/null
-#    end
+#    end  
 #    ps -ef | grep $SSH_AGENT_PID | grep -v grep | grep ssh-agent > /dev/null
 #    if [ $status -eq 0 ]
 #        test_identities
-#    else
+#    else 
 #        start_agent
-#    end
+#    end  
 #end
