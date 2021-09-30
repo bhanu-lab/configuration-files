@@ -11,6 +11,7 @@ set PATH /home/user/.npm-global/bin $PATH
 #set PATH /home/user/.emacs.d/bin $PATH
 #set PATH /usr/lib/ccache/bin/ $PATH
 set PATH /home/user/.nimble/bin $PATH
+set PATH /home/user/.nix-profile/bin $PATH
 set PATH /home/user/.guix-profile/bin $PATH
 set PATH /home/user/.deno/bin $PATH
 
