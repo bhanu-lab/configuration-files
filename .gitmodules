@@ -13,3 +13,6 @@
 [submodule "emacs/spacemacs"]
 	path = emacs/spacemacs
 	url = https://github.com/syl20bnr/spacemacs
+[submodule "nixos/nix/nix-config"]
+	path = nixos/nix/nix-config
+	url = https://github.com/m0lese/nix-config
