@@ -53,8 +53,8 @@ fi
 . /bedrock/run/profile
 
 # My Stuff
-export LOCALE_ARCHIVE="\$HOME/.nix-profile/lib/locale/locale-archive"
-export GUIX_LOCPATH="\$HOME/.guix-profile/lib/locale"
+export LOCALE_ARCHIVE="$HOME/.nix-profile/lib/locale/locale-archive"
+export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export XCURSOR_THEME="Bibata-Rainbow-Modern"
 export XCURSOR_SIZE="32"
