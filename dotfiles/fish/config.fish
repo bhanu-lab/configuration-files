@@ -63,10 +63,11 @@ end
 
 # Overwrites - Functions
 function d; z "$argv" ; l; end
-function di; zi "$argv" ; l; end
-function search; fd "$argv" | as-tree; end
+function dz; zi "$argv" ; l; end
+function search; fd "$argv"; end
 function replace; ruplacer "$argv[1]" "$argv[2]" "$argv[3]" --go; end
-function qtcode; curl qrenco.de/"$argv[1]"; end
+function qrcode; curl qrenco.de/"$argv[1]"; end
+function imagec; imager -i "$argv[1]" -o "$argv[1]"; end
 
 # System
 alias dmesg="dmesg --color=always"
@@ -78,11 +79,12 @@ alias l="exa -ll --header --group --inode --blocks --git --icons"
 alias lt="exa -T --icons"
 alias mkdir="mkdir -vp"
 alias mkfile="touch"
-alias grep="rg"
-alias dog="dog -n"
-alias rm="rm -v"
+#alias grep="rg"
+#alias dog="dog -n"
+alias rm="rm -rfiv"
 alias mv="mv -v"
-alias cp="cp -v"
+alias rename="mv -v"
+alias cp="cp -rv"
 alias ..="cd .. ; l"
 alias mpv="mpv --hwdec=vaapi"
 
@@ -106,7 +108,7 @@ alias procst="procs --tree"
 alias procsc="procs --sortd cpu"
 alias procsm="procs --sortd mem"
 alias untar="tar -xvf"
-alias copy="xclip -sel clip"
+alias xcp="xclip -sel clip"
 alias ports="netstat -tulpen"
 alias disk="df -Th"
 alias disks="lsblk"
