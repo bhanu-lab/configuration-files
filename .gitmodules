@@ -16,3 +16,6 @@
 [submodule "nixos/nix/nix-config"]
 	path = nixos/nix/nix-config
 	url = https://github.com/m0lese/nix-config
+[submodule "tmux/.tmux"]
+	path = tmux/.tmux
+	url = https://github.com/gpakosz/.tmux
