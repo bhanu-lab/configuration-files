@@ -53,7 +53,9 @@ fi
 . /bedrock/run/profile
 
 # My Stuff
+export GUIX_LOCPATH=$HOME/.guix-profile/lib/locale
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export XCURSOR_THEME="Bibata-Rainbow-Modern"
 export XCURSOR_SIZE="32"
 export MOZ_WEBRENDER="1"
+export MOZ_X11_EGL="1"
