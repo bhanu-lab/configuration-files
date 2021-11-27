@@ -1,12 +1,12 @@
 [submodule "exherbo/paludis"]
 	path = exherbo/paludis
-	url = https://github.com/m0lese/paludis-config
+	url = https://github.com/connrodd/paludis-config
 [submodule "gentoo/portage"]
 	path = gentoo/portage
-	url = https://github.com/m0lese/portage-config
+	url = https://github.com/connrodd/portage-config
 [submodule "kernel/Linux-Misc"]
 	path = kernel/Linux-Misc
-	url = https://github.com/m0lese/Linux-Misc
+	url = https://github.com/connrodd/inux-Misc
 [submodule "vim/SpaceVim"]
 	path = vim/SpaceVim
 	url = https://github.com/SpaceVim/SpaceVim
@@ -15,7 +15,7 @@
 	url = https://github.com/syl20bnr/spacemacs
 [submodule "nixos/nix/nix-config"]
 	path = nixos/nix/nix-config
-	url = https://github.com/m0lese/nix-config
+	url = https://github.com/connrodd/nix-config
 [submodule "tmux/.tmux"]
 	path = tmux/.tmux
 	url = https://github.com/gpakosz/.tmux
