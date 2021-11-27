@@ -38,8 +38,10 @@
 	          git rebase --interactive HEAD~$1; \
 	       }; f"
 [core]
-	editor = neovide
+	editor = micro
 [pull]
 	rebase = false
 [help]
 	autocorrect = 25
+[color]
+	ui = auto
