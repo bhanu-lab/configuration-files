@@ -56,14 +56,14 @@ app.update.download.promptMaxAttempts	2
 app.update.elevation.promptMaxAttempts	2	
 app.update.interval	43200	
 app.update.langpack.enabled	true	
-app.update.lastUpdateTime.addon-background-update-timer	1637921047	
-app.update.lastUpdateTime.browser-cleanup-thumbnails	1637995397	
-app.update.lastUpdateTime.region-update-timer	1637921167	
-app.update.lastUpdateTime.rs-experiment-loader-timer	1637995637	
-app.update.lastUpdateTime.search-engine-update-timer	1637995517	
-app.update.lastUpdateTime.services-settings-poll-changes	1637920927	
-app.update.lastUpdateTime.telemetry_modules_ping	1637921407	
-app.update.lastUpdateTime.xpi-signature-verification	1637921287	
+app.update.lastUpdateTime.addon-background-update-timer	1639714019	
+app.update.lastUpdateTime.browser-cleanup-thumbnails	1639734198	
+app.update.lastUpdateTime.region-update-timer	1639736898	
+app.update.lastUpdateTime.rs-experiment-loader-timer	1639736868	
+app.update.lastUpdateTime.search-engine-update-timer	1639734318	
+app.update.lastUpdateTime.services-settings-poll-changes	1639713779	
+app.update.lastUpdateTime.telemetry_modules_ping	1639737798	
+app.update.lastUpdateTime.xpi-signature-verification	1639714139	
 app.update.link.updateAvailableWhatsNew	update-available-whats-new	
 app.update.link.updateManualWhatsNew	update-manual-whats-new	
 app.update.log	false	
@@ -139,7 +139,6 @@ apz.overscroll.stop_velocity_threshold	0.01
 apz.overscroll.stretch_factor	0.35	
 apz.overscroll.test_async_scroll_offset.enabled	false	
 apz.paint_skipping.enabled	true	
-apz.peek_messages.enabled	true	
 apz.pinch_lock.buffer_max_age	50	
 apz.pinch_lock.mode	1	
 apz.pinch_lock.scroll_lock_threshold	0.03125	
@@ -187,8 +186,10 @@ browser.aboutwelcome.enabled	true
 browser.aboutwelcome.screens		
 browser.aboutwelcome.skipFocus	true	
 browser.active_color	#EE0000	
+browser.active_color.dark	#FF9E9E	
 browser.altClickSave	false	
 browser.anchor_color	#0000EE	
+browser.anchor_color.dark	#9E9EFF	
 browser.autofocus	true	
 browser.backspace_action	2	
 browser.bookmarks.addedImportButton	true	
@@ -270,6 +271,7 @@ browser.contentblocking.report.vpn_regions	us,ca,nz,sg,my,gb,de,fr
 browser.contentblocking.report.vpn_sub_id	sub_HrfCZF7VPHzZkA	
 browser.contentblocking.reportBreakage.url	https://tracking-protection-issues.herokuapp.com/new	
 browser.contentblocking.state-partitioning.mvp.ui.enabled	true	
+browser.contextual-services.contextId	{0323bb2a-f5bd-4065-95ef-5a24bcf49ddd}	
 browser.crashReports.unsubmittedCheck.autoSubmit2	false	
 browser.crashReports.unsubmittedCheck.chancesUntilSuppress	4	
 browser.crashReports.unsubmittedCheck.enabled	false	
@@ -281,6 +283,7 @@ browser.discovery.sites	addons.mozilla.org
 browser.display.always_show_rings_after_key_focus	false	
 browser.display.auto_quality_min_font_size	20	
 browser.display.background_color	#FFFFFF	
+browser.display.background_color.dark	#1C1B22	
 browser.display.document_color_use	1	
 browser.display.focus_background_color	#117722	
 browser.display.focus_ring_on_anything	false	
@@ -289,6 +292,7 @@ browser.display.focus_ring_width	1
 browser.display.focus_text_color	#ffffff	
 browser.display.force_inline_alttext	false	
 browser.display.foreground_color	#000000	
+browser.display.foreground_color.dark	#FBFBFE	
 browser.display.normal_lineheight_calc_control	2	
 browser.display.permit_backplate	true	
 browser.display.show_focus_rings	false	
@@ -401,7 +405,7 @@ browser.meta_refresh_when_inactive.disabled	false
 browser.migrate.chrome.history.limit	2000	
 browser.migrate.chrome.history.maxAgeInDays	180	
 browser.migrate.showBookmarksToolbarAfterMigration	true	
-browser.migration.version	119	
+browser.migration.version	120	
 browser.navigation.requireUserInteraction	false	
 browser.newtab.extensionControlled	true	
 browser.newtab.preload	true	
@@ -410,7 +414,7 @@ browser.newtabpage.activity-stream.asrouter.devtoolsEnabled	false
 browser.newtabpage.activity-stream.asrouter.disable-captive-portal-vpn-promo	false	
 browser.newtabpage.activity-stream.asrouter.providers.cfr	{"id":"cfr","enabled":true,"type":"remote-settings","bucket":"cfr","updateCycleInMs":3600000}	
 browser.newtabpage.activity-stream.asrouter.providers.message-groups	{"id":"message-groups","enabled":true,"type":"remote-settings","bucket":"message-groups","updateCycleInMs":3600000}	
-browser.newtabpage.activity-stream.asrouter.providers.messaging-experiments	{"id":"messaging-experiments","enabled":true,"type":"remote-experiments","messageGroups":["cfr","whats-new-panel","moments-page","aboutwelcome","infobar","spotlight"],"updateCycleInMs":3600000}	
+browser.newtabpage.activity-stream.asrouter.providers.messaging-experiments	{"id":"messaging-experiments","enabled":true,"type":"remote-experiments","messageGroups":["cfr","moments-page","aboutwelcome","infobar","spotlight"],"updateCycleInMs":3600000}	
 browser.newtabpage.activity-stream.asrouter.providers.onboarding	{"id":"onboarding","type":"local","localProvider":"OnboardingMessageProvider","enabled":true,"exclude":[]}	
 browser.newtabpage.activity-stream.asrouter.providers.snippets	{"id":"snippets","enabled":false,"type":"remote","url":"https://snippets.cdn.mozilla.net/%STARTPAGE_VERSION%/%NAME%/%VERSION%/%APPBUILDID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/","updateCycleInMs":14400000}	
 browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel	{"id":"whats-new-panel","enabled":true,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}	
@@ -508,6 +512,7 @@ browser.preferences.defaultPerformanceSettings.enabled	false
 browser.preferences.experimental	false	
 browser.preferences.experimental.hidden	false	
 browser.preferences.instantApply	true	
+browser.preferences.moreFromMozilla	false	
 browser.preferences.search	true	
 browser.privatebrowsing.autostart	false	
 browser.privatebrowsing.forceMediaMemoryCache	false	
@@ -522,7 +527,7 @@ browser.region.network.scan	false
 browser.region.network.url	https://location.services.mozilla.com/v1/country?key=%MOZILLA_API_KEY%	
 browser.region.timeout	5000	
 browser.region.update.enabled	true	
-browser.region.update.updated	1637921168	
+browser.region.update.updated	1639736899	
 browser.rights.3.shown	true	
 browser.safebrowsing.allowOverride	true	
 browser.safebrowsing.blockedURIs.enabled	true	
@@ -554,20 +559,20 @@ browser.safebrowsing.provider.google4.advisoryURL	https://developers.google.com/
 browser.safebrowsing.provider.google4.dataSharing.enabled	false	
 browser.safebrowsing.provider.google4.dataSharingURL	https://safebrowsing.googleapis.com/v4/threatHits?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST	
 browser.safebrowsing.provider.google4.gethashURL	https://safebrowsing.googleapis.com/v4/fullHashes:find?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST	
-browser.safebrowsing.provider.google4.lastupdatetime	1637995372471	
+browser.safebrowsing.provider.google4.lastupdatetime	1639754921263	
 browser.safebrowsing.provider.google4.lists	goog-badbinurl-proto,goog-downloadwhite-proto,goog-phish-proto,googpub-phish-proto,goog-malware-proto,goog-unwanted-proto,goog-harmful-proto,goog-passwordwhite-proto	
-browser.safebrowsing.provider.google4.nextupdatetime	1637997200471	
+browser.safebrowsing.provider.google4.nextupdatetime	1639756747263	
 browser.safebrowsing.provider.google4.pver	4	
 browser.safebrowsing.provider.google4.reportMalwareMistakeURL	https://%LOCALE%.malware-error.mozilla.com/?url=	
 browser.safebrowsing.provider.google4.reportPhishMistakeURL	https://%LOCALE%.phish-error.mozilla.com/?url=	
 browser.safebrowsing.provider.google4.reportURL	https://safebrowsing.google.com/safebrowsing/diagnostic?site=	
 browser.safebrowsing.provider.google4.updateURL	https://safebrowsing.googleapis.com/v4/threatListUpdates:fetch?$ct=application/x-protobuf&key=%GOOGLE_SAFEBROWSING_API_KEY%&$httpMethod=POST	
 browser.safebrowsing.provider.mozilla.gethashURL	https://shavar.services.mozilla.com/gethash?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2	
-browser.safebrowsing.provider.mozilla.lastupdatetime	1637995386422	
+browser.safebrowsing.provider.mozilla.lastupdatetime	1639734203402	
 browser.safebrowsing.provider.mozilla.lists	base-track-digest256,mozstd-trackwhite-digest256,google-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256,social-tracking-protection-digest256,social-tracking-protection-facebook-digest256,social-tracking-protection-linkedin-digest256,social-tracking-protection-twitter-digest256	
 browser.safebrowsing.provider.mozilla.lists.base	moz-std	
 browser.safebrowsing.provider.mozilla.lists.content	moz-full	
-browser.safebrowsing.provider.mozilla.nextupdatetime	1638016986422	
+browser.safebrowsing.provider.mozilla.nextupdatetime	1639755803402	
 browser.safebrowsing.provider.mozilla.pver	2.2	
 browser.safebrowsing.provider.mozilla.updateURL	https://shavar.services.mozilla.com/downloads?client=SAFEBROWSING_ID&appver=%MAJOR_VERSION%&pver=2.2	
 browser.safebrowsing.reportPhishURL	https://%LOCALE%.phish-report.mozilla.com/?url=	
@@ -616,15 +621,16 @@ browser.sessionstore.restore_tabs_lazily	true
 browser.sessionstore.resume_from_crash	true	
 browser.sessionstore.resume_session_once	false	
 browser.sessionstore.resuming_after_os_restart	false	
-browser.sessionstore.upgradeBackup.latestBuildID	20211125164433	
+browser.sessionstore.upgradeBackup.latestBuildID	20211214121312	
 browser.sessionstore.upgradeBackup.maxUpgradeBackups	3	
 browser.sessionstore.warnOnQuit	true	
 browser.shell.checkDefaultBrowser	false	
 browser.shell.defaultBrowserCheckCount	0	
 browser.shell.didSkipDefaultBrowserCheckOnFirstRun	false	
-browser.shell.mostRecentDateSetAsDefault	1637995368	
+browser.shell.mostRecentDateSetAsDefault	1639736868	
 browser.shell.shortcutFavicons	true	
 browser.shell.skipDefaultBrowserCheckOnFirstRun	true	
+browser.soft_reload.only_force_validate_top_level_document	false	
 browser.ssl_override_behavior	2	
 browser.startup.blankWindow	false	
 browser.startup.couldRestoreSession.count	1	
@@ -632,11 +638,11 @@ browser.startup.firstrunSkipsHomepage	true
 browser.startup.homepage	about:blank	
 browser.startup.homepage.abouthome_cache.enabled	false	
 browser.startup.homepage.abouthome_cache.loglevel	Warn	
-browser.startup.homepage_override.buildID	20211125164433	
-browser.startup.homepage_override.mstone	94.0.2	
-browser.startup.lastColdStartupCheck	1637995368	
+browser.startup.homepage_override.buildID	20211214121312	
+browser.startup.homepage_override.mstone	95.0	
+browser.startup.lastColdStartupCheck	1639736868	
 browser.startup.page	3	
-browser.startup.upgradeDialog.enabled	true	
+browser.startup.upgradeDialog.enabled	false	
 browser.startup.upgradeDialog.version	94	
 browser.storageManager.pressureNotification.minIntervalMS	1200000	
 browser.storageManager.pressureNotification.usageThresholdGB	5	
@@ -648,7 +654,7 @@ browser.tabs.crashReporting.includeURL	false
 browser.tabs.crashReporting.sendReport	true	
 browser.tabs.delayHidingAudioPlayingIconMS	3000	
 browser.tabs.documentchannel.parent-controlled	false	
-browser.tabs.drawInTitlebar	true	
+browser.tabs.inTitlebar	1	
 browser.tabs.insertAfterCurrent	false	
 browser.tabs.insertRelatedAfterCurrent	true	
 browser.tabs.loadBookmarksInBackground	false	
@@ -656,6 +662,7 @@ browser.tabs.loadBookmarksInTabs	false
 browser.tabs.loadDivertedInBackground	false	
 browser.tabs.loadInBackground	true	
 browser.tabs.maxOpenBeforeWarn	15	
+browser.tabs.min_inactive_duration_before_unload	600000	
 browser.tabs.opentabfor.middleclick	true	
 browser.tabs.remote.autostart	true	
 browser.tabs.remote.dataUriInDefaultWebProcess	false	
@@ -685,8 +692,8 @@ browser.tabs.unloadOnLowMemory	true
 browser.tabs.warnOnClose	true	
 browser.tabs.warnOnCloseOtherTabs	true	
 browser.tabs.warnOnOpen	true	
+browser.theme.content-theme	0	
 browser.theme.toolbar-theme	0	
-browser.toolbars.bookmarks.2h2020	true	
 browser.toolbars.bookmarks.showOtherBookmarks	true	
 browser.toolbars.bookmarks.visibility	always	
 browser.toolbars.keyboard_navigation	true	
@@ -701,7 +708,7 @@ browser.translation.ui.show	false
 browser.triple_click_selects_paragraph	true	
 browser.ui.zoom.force-user-scalable	false	
 browser.uiCustomization.debug	false	
-browser.uiCustomization.state	{"placements":{"widget-overflow-fixed-list":["song-id_losnappas-browser-action","keepassxc-browser_keepassxc_org-browser-action","addon_darkreader_org-browser-action","ublock0_raymondhill_net-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action","_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action","_529b261b-df0b-4e3b-bf42-07b462da0ee8_-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","_dd10a870-27c8-4b74-bfd4-0f767fe68770_-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","sponsorblocker_ajay_app-browser-action","_b86e4813-687a-43e6-ab65-0bde4ab75758_-browser-action","https-everywhere_eff_org-browser-action","_7b1bf0b6-a1b9-42b0-b75d-252036438bdc_-browser-action","jid1-zadieub7xozojw_jetpack-browser-action","_63d150c4-394c-4275-bc32-c464e76a891c_-browser-action","_72bd91c9-3dc5-40a8-9b10-dec633c0873f_-browser-action","jid1-om7ejgwa1u8akg_jetpack-browser-action","_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action","_cloudhole-browser-action","github-writer_cksource_com-browser-action","_2bc4e3b1-d07a-4967-b460-3c66b8870319_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","admin_myprivacytools_com-browser-action","user-agent-switcher_ninetailed_ninja-browser-action","_a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7_-browser-action","github-forks-addon_musicallyut_in-browser-action","2_0_disconnect_me-browser-action","canvasblocker_kkapsner_de-browser-action","_504e1565-ddd7-4fc3-bec3-079ddb622b2c_-browser-action","woop-noopscoopsnsxq_jetpack-browser-action"],"nav-bar":["treestyletab_piro_sakura_ne_jp-browser-action","customizableui-special-spring15","stop-reload-button","back-button","forward-button","customizableui-special-spring4","urlbar-container","customizableui-special-spring18","customizableui-special-spring6","customizableui-special-spring2","save-to-pocket-button","downloads-button","tab-counter-icon_magicp_jp-browser-action","_6ac85730-7d0f-4de0-b3fa-21142dd85326_-browser-action","_e7cae536-271e-432e-891f-423f05eef6c8_-browser-action","jid1-82bqxmq0klinkg_jetpack-browser-action","_274f308e-9f84-46b1-ab38-9f224239492e_-browser-action","firefox_tampermonkey_net-browser-action","_46551ec9-40f0-4e47-8e18-8e5cf550cfb8_-browser-action","_3c078156-979c-498b-8990-85f7987dd929_-browser-action","tabby_whatsyouridea_com-browser-action","chrome-gnome-shell_gnome_org-browser-action","_b2c51689-0095-472b-b900-2b3911fd5089_-browser-action","css-override_scottco_co-browser-action","zenhub_zenhub_io-browser-action","_36da9617-69e6-45b2-a495-ac5d07168ccd_-browser-action","_0a40b0aa-001b-41c9-a3d7-7f4c4fe77025_-browser-action","ffext_basicvideoext_startpage24-browser-action","_2c1bf1db-1d03-469a-8d76-c7a3c8b8d928_-browser-action","87677a2c52b84ad3a151a4a72f5bd3c4_jetpack-browser-action"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["import-button","personal-bookmarks"]},"seen":["developer-button","treestyletab_piro_sakura_ne_jp-browser-action","_7b1bf0b6-a1b9-42b0-b75d-252036438bdc_-browser-action","tab-counter-icon_magicp_jp-browser-action","https-everywhere_eff_org-browser-action","addon_darkreader_org-browser-action","ublock0_raymondhill_net-browser-action","sponsorblocker_ajay_app-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","_b86e4813-687a-43e6-ab65-0bde4ab75758_-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action","jid1-zadieub7xozojw_jetpack-browser-action","_dd10a870-27c8-4b74-bfd4-0f767fe68770_-browser-action","_529b261b-df0b-4e3b-bf42-07b462da0ee8_-browser-action","song-id_losnappas-browser-action","_6ac85730-7d0f-4de0-b3fa-21142dd85326_-browser-action","_e7cae536-271e-432e-891f-423f05eef6c8_-browser-action","jid1-82bqxmq0klinkg_jetpack-browser-action","_274f308e-9f84-46b1-ab38-9f224239492e_-browser-action","firefox_tampermonkey_net-browser-action","_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action","_46551ec9-40f0-4e47-8e18-8e5cf550cfb8_-browser-action","save-to-pocket-button","keepassxc-browser_keepassxc_org-browser-action","_63d150c4-394c-4275-bc32-c464e76a891c_-browser-action","_3c078156-979c-498b-8990-85f7987dd929_-browser-action","tabby_whatsyouridea_com-browser-action","jid1-om7ejgwa1u8akg_jetpack-browser-action","_72bd91c9-3dc5-40a8-9b10-dec633c0873f_-browser-action","chrome-gnome-shell_gnome_org-browser-action","_b2c51689-0095-472b-b900-2b3911fd5089_-browser-action","css-override_scottco_co-browser-action","_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action","_cloudhole-browser-action","zenhub_zenhub_io-browser-action","github-writer_cksource_com-browser-action","_b9db16a4-6edc-47ec-a1f4-b86292ed211d_-browser-action","_36da9617-69e6-45b2-a495-ac5d07168ccd_-browser-action","_2bc4e3b1-d07a-4967-b460-3c66b8870319_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","user-agent-switcher_ninetailed_ninja-browser-action","admin_myprivacytools_com-browser-action","_a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7_-browser-action","_0a40b0aa-001b-41c9-a3d7-7f4c4fe77025_-browser-action","github-forks-addon_musicallyut_in-browser-action","2_0_disconnect_me-browser-action","ffext_basicvideoext_startpage24-browser-action","_2c1bf1db-1d03-469a-8d76-c7a3c8b8d928_-browser-action","canvasblocker_kkapsner_de-browser-action","87677a2c52b84ad3a151a4a72f5bd3c4_jetpack-browser-action","_504e1565-ddd7-4fc3-bec3-079ddb622b2c_-browser-action","woop-noopscoopsnsxq_jetpack-browser-action"],"dirtyAreaCache":["nav-bar","PersonalToolbar","toolbar-menubar","TabsToolbar","widget-overflow-fixed-list"],"currentVersion":17,"newElementCount":21}	
+browser.uiCustomization.state	{"placements":{"widget-overflow-fixed-list":["song-id_losnappas-browser-action","keepassxc-browser_keepassxc_org-browser-action","addon_darkreader_org-browser-action","ublock0_raymondhill_net-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action","_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action","_529b261b-df0b-4e3b-bf42-07b462da0ee8_-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","_dd10a870-27c8-4b74-bfd4-0f767fe68770_-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","sponsorblocker_ajay_app-browser-action","_b86e4813-687a-43e6-ab65-0bde4ab75758_-browser-action","https-everywhere_eff_org-browser-action","_7b1bf0b6-a1b9-42b0-b75d-252036438bdc_-browser-action","jid1-zadieub7xozojw_jetpack-browser-action","_63d150c4-394c-4275-bc32-c464e76a891c_-browser-action","_72bd91c9-3dc5-40a8-9b10-dec633c0873f_-browser-action","jid1-om7ejgwa1u8akg_jetpack-browser-action","_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action","_cloudhole-browser-action","github-writer_cksource_com-browser-action","_2bc4e3b1-d07a-4967-b460-3c66b8870319_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","admin_myprivacytools_com-browser-action","user-agent-switcher_ninetailed_ninja-browser-action","_a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7_-browser-action","github-forks-addon_musicallyut_in-browser-action","2_0_disconnect_me-browser-action","canvasblocker_kkapsner_de-browser-action","_504e1565-ddd7-4fc3-bec3-079ddb622b2c_-browser-action","woop-noopscoopsnsxq_jetpack-browser-action"],"nav-bar":["treestyletab_piro_sakura_ne_jp-browser-action","customizableui-special-spring15","stop-reload-button","back-button","forward-button","customizableui-special-spring4","urlbar-container","customizableui-special-spring18","customizableui-special-spring6","customizableui-special-spring2","save-to-pocket-button","downloads-button","tab-counter-icon_magicp_jp-browser-action","_6ac85730-7d0f-4de0-b3fa-21142dd85326_-browser-action","_e7cae536-271e-432e-891f-423f05eef6c8_-browser-action","jid1-82bqxmq0klinkg_jetpack-browser-action","_274f308e-9f84-46b1-ab38-9f224239492e_-browser-action","firefox_tampermonkey_net-browser-action","_46551ec9-40f0-4e47-8e18-8e5cf550cfb8_-browser-action","_3c078156-979c-498b-8990-85f7987dd929_-browser-action","tabby_whatsyouridea_com-browser-action","chrome-gnome-shell_gnome_org-browser-action","_b2c51689-0095-472b-b900-2b3911fd5089_-browser-action","css-override_scottco_co-browser-action","zenhub_zenhub_io-browser-action","_36da9617-69e6-45b2-a495-ac5d07168ccd_-browser-action","_0a40b0aa-001b-41c9-a3d7-7f4c4fe77025_-browser-action","ffext_basicvideoext_startpage24-browser-action","_2c1bf1db-1d03-469a-8d76-c7a3c8b8d928_-browser-action","87677a2c52b84ad3a151a4a72f5bd3c4_jetpack-browser-action","_732216ec-0dab-43bb-ac85-4b5e1977599d_-browser-action","browsec_browsec_com-browser-action","_e4a12b8a-ab12-449a-b70e-4f54ccaf235e_-browser-action","foxyproxy_eric_h_jung-browser-action"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["import-button","personal-bookmarks"]},"seen":["developer-button","treestyletab_piro_sakura_ne_jp-browser-action","_7b1bf0b6-a1b9-42b0-b75d-252036438bdc_-browser-action","tab-counter-icon_magicp_jp-browser-action","https-everywhere_eff_org-browser-action","addon_darkreader_org-browser-action","ublock0_raymondhill_net-browser-action","sponsorblocker_ajay_app-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","_b86e4813-687a-43e6-ab65-0bde4ab75758_-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action","jid1-zadieub7xozojw_jetpack-browser-action","_dd10a870-27c8-4b74-bfd4-0f767fe68770_-browser-action","_529b261b-df0b-4e3b-bf42-07b462da0ee8_-browser-action","song-id_losnappas-browser-action","_6ac85730-7d0f-4de0-b3fa-21142dd85326_-browser-action","_e7cae536-271e-432e-891f-423f05eef6c8_-browser-action","jid1-82bqxmq0klinkg_jetpack-browser-action","_274f308e-9f84-46b1-ab38-9f224239492e_-browser-action","firefox_tampermonkey_net-browser-action","_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action","_46551ec9-40f0-4e47-8e18-8e5cf550cfb8_-browser-action","save-to-pocket-button","keepassxc-browser_keepassxc_org-browser-action","_63d150c4-394c-4275-bc32-c464e76a891c_-browser-action","_3c078156-979c-498b-8990-85f7987dd929_-browser-action","tabby_whatsyouridea_com-browser-action","jid1-om7ejgwa1u8akg_jetpack-browser-action","_72bd91c9-3dc5-40a8-9b10-dec633c0873f_-browser-action","chrome-gnome-shell_gnome_org-browser-action","_b2c51689-0095-472b-b900-2b3911fd5089_-browser-action","css-override_scottco_co-browser-action","_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action","_cloudhole-browser-action","zenhub_zenhub_io-browser-action","github-writer_cksource_com-browser-action","_b9db16a4-6edc-47ec-a1f4-b86292ed211d_-browser-action","_36da9617-69e6-45b2-a495-ac5d07168ccd_-browser-action","_2bc4e3b1-d07a-4967-b460-3c66b8870319_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","user-agent-switcher_ninetailed_ninja-browser-action","admin_myprivacytools_com-browser-action","_a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7_-browser-action","_0a40b0aa-001b-41c9-a3d7-7f4c4fe77025_-browser-action","github-forks-addon_musicallyut_in-browser-action","2_0_disconnect_me-browser-action","ffext_basicvideoext_startpage24-browser-action","_2c1bf1db-1d03-469a-8d76-c7a3c8b8d928_-browser-action","canvasblocker_kkapsner_de-browser-action","87677a2c52b84ad3a151a4a72f5bd3c4_jetpack-browser-action","_504e1565-ddd7-4fc3-bec3-079ddb622b2c_-browser-action","woop-noopscoopsnsxq_jetpack-browser-action","_732216ec-0dab-43bb-ac85-4b5e1977599d_-browser-action","browsec_browsec_com-browser-action","_e4a12b8a-ab12-449a-b70e-4f54ccaf235e_-browser-action","foxyproxy_eric_h_jung-browser-action"],"dirtyAreaCache":["nav-bar","PersonalToolbar","toolbar-menubar","TabsToolbar","widget-overflow-fixed-list"],"currentVersion":17,"newElementCount":21}	
 browser.uidensity	2	
 browser.uitour.enabled	true	
 browser.uitour.loglevel	Error	
@@ -761,6 +768,7 @@ browser.urlbar.unitConversion.enabled	false
 browser.urlbar.update2.emptySearchBehavior	0	
 browser.viewport.desktopWidth	980	
 browser.visited_color	#551A8B	
+browser.visited_color.dark	#D0ADF0	
 browser.warnOnQuit	true	
 browser.warnOnQuitShortcut	true	
 browser.xr.warning.infoURL	https://www.mozilla.org/%LOCALE%/firefox/xr/	
@@ -1099,7 +1107,8 @@ devtools.styleeditor.navSidebarWidth	245
 devtools.styleeditor.showMediaSidebar	true	
 devtools.styleeditor.transitions	true	
 devtools.target-switching.server.enabled	true	
-devtools.theme	light	
+devtools.theme	auto	
+devtools.theme.show-auto-theme-info	true	
 devtools.toolbox.footer.height	397	
 devtools.toolbox.force-chrome-prefs	true	
 devtools.toolbox.host	bottom	
@@ -1136,7 +1145,7 @@ devtools.webconsole.timestampMessages	false
 distribution.about	Mozilla Firefox for Gentoo	
 distribution.gentoo.bookmarksProcessed	true	
 distribution.id	gentoo	
-distribution.iniFile.exists.appversion	94.0.2	
+distribution.iniFile.exists.appversion	95.0	
 distribution.iniFile.exists.value	true	
 distribution.version	1.0	
 docshell.shistory.bfcache.allow_unload_listeners	false	
@@ -1177,6 +1186,7 @@ dom.clients.openwindow_favors_same_process	true
 dom.compositionevent.allow_control_characters	false	
 dom.confirm_repost.testing.always_accept	false	
 dom.cross_origin_iframes_loaded_in_background	false	
+dom.crypto.randomUUID.enabled	true	
 dom.css_pseudo_element.enabled	false	
 dom.cycle_collector.incremental	true	
 dom.debug.propagate_gesture_events_through_content	false	
@@ -1227,7 +1237,7 @@ dom.forms.datetime-local.widget	true
 dom.forms.datetime.others	false	
 dom.forms.datetime.timepicker	false	
 dom.forms.enterkeyhint	true	
-dom.forms.inputmode	false	
+dom.forms.inputmode	true	
 dom.forms.number.grouping	false	
 dom.forms.select.customstyling	false	
 dom.forms.selectSearch	false	
@@ -1407,7 +1417,8 @@ dom.script_loader.external_scripts.speculate_link_preload.enabled	false
 dom.script_loader.external_scripts.speculate_non_parser_inserted.enabled	false	
 dom.script_loader.external_scripts.speculative_omt_parse.enabled	true	
 dom.script_loader.external_scripts.utf8_parsing.enabled	true	
-dom.script_loader.full_parse	false	
+dom.script_loader.full_parse_max_size	10485760	
+dom.script_loader.full_parse_min_mem	2	
 dom.securecontext.whitelist_onions	false	
 dom.security.enforceIPCBasedPrincipalVetting	true	
 dom.security.featurePolicy.experimental.enabled	false	
@@ -1521,6 +1532,7 @@ dom.vr.process.startup_timeout_ms	5000
 dom.vr.puppet.enabled	false	
 dom.vr.require-gesture	true	
 dom.vr.webxr.enabled	false	
+dom.vr.webxr.quantization	0.05	
 dom.w3c_pointer_events.implicit_capture	true	
 dom.w3c_touch_events.enabled	2	
 dom.w3c_touch_events.legacy_apis.enabled	false	
@@ -1596,6 +1608,7 @@ extensions.blocklist.pingCountVersion	-1
 extensions.checkCompatibility.temporaryThemeOverride_minAppVersion	29.0a1	
 extensions.databaseSchema	33	
 extensions.experiments.enabled	false	
+extensions.filterResponseServiceWorkerScript.disabled	false	
 extensions.formautofill.addresses.capture.enabled	false	
 extensions.formautofill.addresses.enabled	true	
 extensions.formautofill.available	detect	
@@ -1612,7 +1625,7 @@ extensions.formautofill.supportRTL	false
 extensions.formautofill.supportedCountries	US,CA	
 extensions.geckoProfiler.acceptedExtensionIds	geckoprofiler@mozilla.com,quantum-foxfooding@mozilla.com,raptor@mozilla.org	
 extensions.getAddons.cache.enabled	true	
-extensions.getAddons.cache.lastUpdate	1637921049	
+extensions.getAddons.cache.lastUpdate	1639714023	
 extensions.getAddons.databaseSchema	6	
 extensions.getAddons.discovery.api_url	https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%&edition=%DISTRIBUTION%	
 extensions.getAddons.get.url	https://services.addons.mozilla.org/api/v4/addons/search/?guid=%IDS%&lang=%LOCALE%	
@@ -1623,9 +1636,9 @@ extensions.htmlaboutaddons.inline-options.enabled	true
 extensions.htmlaboutaddons.recommendations.enabled	true	
 extensions.incognito.migrated	true	
 extensions.langpacks.signatures.required	true	
-extensions.lastAppBuildId	20211125164433	
-extensions.lastAppVersion	94.0.2	
-extensions.lastPlatformVersion	94.0.2	
+extensions.lastAppBuildId	20211214121312	
+extensions.lastAppVersion	95.0	
+extensions.lastPlatformVersion	95.0	
 extensions.logging.enabled	false	
 extensions.pendingOperations	false	
 extensions.pictureinpicture.enable_picture_in_picture_overrides	true	
@@ -1650,7 +1663,7 @@ extensions.startupScanScopes	0
 extensions.strictCompatibility	false	
 extensions.systemAddon.update.enabled	true	
 extensions.systemAddon.update.url	https://aus5.mozilla.org/update/3/SystemAddons/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml	
-extensions.systemAddonSet	{"schema":1,"directory":"{d8483ed3-baa5-4621-97ed-c02d5c60616a}","addons":{"addons-search-detection@mozilla.com":{"version":"1.0.1"},"reset-search-defaults@mozilla.com":{"version":"2.1.0"}}}	
+extensions.systemAddonSet	{"schema":1,"directory":"{1c919870-b80d-4178-8595-f66a3a7bdce6}","addons":{"reset-search-defaults@mozilla.com":{"version":"2.1.0"},"webcompat@mozilla.org":{"version":"28.0.1buildid20211210.021657"}}}	
 extensions.ui.dictionary.hidden	true	
 extensions.ui.extension.hidden	false	
 extensions.ui.lastCategory	addons://list/extension	
@@ -1688,7 +1701,6 @@ extensions.webextensions.ExtensionStorageIDB.migrated.{529b261b-df0b-4e3b-bf42-0
 extensions.webextensions.ExtensionStorageIDB.migrated.{63d150c4-394c-4275-bc32-c464e76a891c}	true	
 extensions.webextensions.ExtensionStorageIDB.migrated.{70b4fb8a-ae41-4e66-99f5-0fa89e411d69}	true	
 extensions.webextensions.ExtensionStorageIDB.migrated.{74145f27-f039-47ce-a470-a662b129930a}	true	
-extensions.webextensions.ExtensionStorageIDB.migrated.{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}	true	
 extensions.webextensions.ExtensionStorageIDB.migrated.{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}	true	
 extensions.webextensions.ExtensionStorageIDB.migrated.{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}	true	
 extensions.webextensions.ExtensionStorageIDB.migrated.{aecec67f-0d10-4fa7-b7c7-609a2db280cf}	true	
@@ -1706,7 +1718,7 @@ extensions.webextensions.protocol.remote	true
 extensions.webextensions.remote	true	
 extensions.webextensions.restrictedDomains	accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,addons.mozilla.org,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com	
 extensions.webextensions.userScripts.enabled	true	
-extensions.webextensions.uuids	{"default-theme@mozilla.org":"3adaaed1-f1f6-48ba-ac0b-f9da3e13948c","google@search.mozilla.org":"f66d80f4-a9c6-4f02-a8f5-90963d97f3ac","amazondotcom@search.mozilla.org":"a753924e-3b90-4d57-a2c5-5bab6a80e084","wikipedia@search.mozilla.org":"690ac81d-12b5-4649-b34e-fd17d243828c","bing@search.mozilla.org":"3d4d145d-33e7-4175-ba83-27c5866fea5d","ddg@search.mozilla.org":"ef921e0b-edc7-4b25-ae80-193e8a79dcb2","tab-counter-icon@magicp.jp":"3c27c608-e45e-4783-97a9-d07d01dbe946","https-everywhere@eff.org":"07910385-401a-4860-bb38-02b92a9389d9","addon@darkreader.org":"58ebfdb0-332f-48e1-915b-2ab2d0d71f7b","uBlock0@raymondhill.net":"2e051cda-27e8-4571-aa88-0ee01fb8fbeb","sponsorBlocker@ajay.app":"32548719-9d09-4b32-9a9b-32c5f9300f82","{74145f27-f039-47ce-a470-a662b129930a}":"ae7308f6-5b7c-4bd9-938e-34dd94c5f608","jid1-KKzOGWgsW3Ao4Q@jetpack":"c2da6d8e-8ba1-4b56-b728-e7e3d3674691","jid1-MnnxcxisBPnSXQ@jetpack":"27ae8681-ab2b-41e5-8467-00afc2e1875f","{dd10a870-27c8-4b74-bfd4-0f767fe68770}":"cff88838-8d64-4a20-802b-76be3bc81f4e","{529b261b-df0b-4e3b-bf42-07b462da0ee8}":"da3e3deb-c3a0-4592-acb5-57d8b912a74b","{c4cb2b36-3932-4fac-ad9e-a723f81a04d3}":"e28d3c1a-f25b-4a65-a348-d3d3696282e3","{aecec67f-0d10-4fa7-b7c7-609a2db280cf}":"b54e7a35-535a-4f38-ba93-2b2a4f96afe7","{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}":"213b8635-ecfd-4c36-806c-d5b44acc3fa0","formautofill@mozilla.org":"760e5021-232f-435b-920c-b1764fc44fbe","pictureinpicture@mozilla.org":"6cb8e7cd-3c5b-4a03-a1cf-5816d339d464","screenshots@mozilla.org":"a865c2db-b83f-4749-8ec5-9db099df4819","doh-rollout@mozilla.org":"468185a7-1465-468b-9b55-35a3d7f3d9ec","webcompat-reporter@mozilla.org":"959988b0-76d7-4320-be82-3c2f0a3552db","webcompat@mozilla.org":"0411164b-901e-490c-b44e-e0f2d376a6df","{63d150c4-394c-4275-bc32-c464e76a891c}":"ef62f435-1916-4416-b202-b485c64b0562","reset-search-defaults@mozilla.com":"9a8b3e03-5140-467c-9237-113f47eff011","treestyletab@piro.sakura.ne.jp":"59c1b86f-490b-45a0-8fc0-232ecfb913c0","song-id@losnappas":"9def2107-2568-445d-bcf5-4dbbe22da026","isometric-contributions@jasonlong.me":"8677547d-2f81-4956-93fa-bfa1cb8e5a94","{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}":"2b579146-61fd-4ff6-a8c2-33a1c9c01916","{007919a3-5a2f-486d-84ca-f299f5082027}":"d3dcff7d-02f5-449c-9adb-44e9dad478f4","@github-readme-toc":"c6342e2a-86c0-4227-a226-04a89ef70de7","{1798fd1b-5a24-4135-92d3-9292f659c1e5}":"56242580-3dd8-440b-92a1-6df1eaea7a33","addons-search-detection@mozilla.com":"38f5d7bf-f012-4681-8dab-1d7ca151ed5d","jid1-BoFifL9Vbdl2zQ@jetpack":"82d02664-b409-41b2-b172-5afe2cc1a875","CanvasBlocker@kkapsner.de":"9635a0a7-b3fc-44ac-86bf-9099c217ed2a","{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}":"155a1682-d408-4454-83bc-53137c383d7e","{70b4fb8a-ae41-4e66-99f5-0fa89e411d69}":"97f49639-316f-420e-ba2f-da8aa911ec82","http.version.indicator@patrick.dark.name":"62ce4e43-095d-49d8-a5ff-016ecf4a157b","2.0@disconnect.me":"74209c84-8179-41cb-a395-9c8edfc8f532","{74e6405d-2f36-498b-b652-4c65c849eecd}":"48b33b00-6334-490e-977b-91693613a585","keepassxc-browser@keepassxc.org":"7639a08e-fdd5-453e-a9cc-f6aa892d09fd","proxy-failover@mozilla.com":"cf06ef1c-b15e-4604-bcf6-0f286690e9f2","jid1-93WyvpgvxzGATw@jetpack":"635d2cc2-7fc8-41cc-bea6-d347e1f19f2e","{504e1565-ddd7-4fc3-bec3-079ddb622b2c}":"d3573c33-2593-4376-9300-5e3a6b29aa4f","dont-track-me-google@robwu.nl":"cb3e5281-479c-4042-9a13-d0dec809f803","woop-NoopscooPsnSXQ@jetpack":"54eba6b5-2f99-4559-84be-45836b8fa166"}	
+extensions.webextensions.uuids	{"default-theme@mozilla.org":"3adaaed1-f1f6-48ba-ac0b-f9da3e13948c","google@search.mozilla.org":"f66d80f4-a9c6-4f02-a8f5-90963d97f3ac","amazondotcom@search.mozilla.org":"a753924e-3b90-4d57-a2c5-5bab6a80e084","wikipedia@search.mozilla.org":"690ac81d-12b5-4649-b34e-fd17d243828c","bing@search.mozilla.org":"3d4d145d-33e7-4175-ba83-27c5866fea5d","ddg@search.mozilla.org":"ef921e0b-edc7-4b25-ae80-193e8a79dcb2","tab-counter-icon@magicp.jp":"3c27c608-e45e-4783-97a9-d07d01dbe946","https-everywhere@eff.org":"07910385-401a-4860-bb38-02b92a9389d9","addon@darkreader.org":"58ebfdb0-332f-48e1-915b-2ab2d0d71f7b","uBlock0@raymondhill.net":"2e051cda-27e8-4571-aa88-0ee01fb8fbeb","sponsorBlocker@ajay.app":"32548719-9d09-4b32-9a9b-32c5f9300f82","{74145f27-f039-47ce-a470-a662b129930a}":"ae7308f6-5b7c-4bd9-938e-34dd94c5f608","jid1-KKzOGWgsW3Ao4Q@jetpack":"c2da6d8e-8ba1-4b56-b728-e7e3d3674691","jid1-MnnxcxisBPnSXQ@jetpack":"27ae8681-ab2b-41e5-8467-00afc2e1875f","{dd10a870-27c8-4b74-bfd4-0f767fe68770}":"cff88838-8d64-4a20-802b-76be3bc81f4e","{529b261b-df0b-4e3b-bf42-07b462da0ee8}":"da3e3deb-c3a0-4592-acb5-57d8b912a74b","{c4cb2b36-3932-4fac-ad9e-a723f81a04d3}":"e28d3c1a-f25b-4a65-a348-d3d3696282e3","{aecec67f-0d10-4fa7-b7c7-609a2db280cf}":"b54e7a35-535a-4f38-ba93-2b2a4f96afe7","{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}":"213b8635-ecfd-4c36-806c-d5b44acc3fa0","formautofill@mozilla.org":"760e5021-232f-435b-920c-b1764fc44fbe","pictureinpicture@mozilla.org":"6cb8e7cd-3c5b-4a03-a1cf-5816d339d464","screenshots@mozilla.org":"a865c2db-b83f-4749-8ec5-9db099df4819","doh-rollout@mozilla.org":"468185a7-1465-468b-9b55-35a3d7f3d9ec","webcompat-reporter@mozilla.org":"959988b0-76d7-4320-be82-3c2f0a3552db","webcompat@mozilla.org":"0411164b-901e-490c-b44e-e0f2d376a6df","{63d150c4-394c-4275-bc32-c464e76a891c}":"ef62f435-1916-4416-b202-b485c64b0562","reset-search-defaults@mozilla.com":"9a8b3e03-5140-467c-9237-113f47eff011","treestyletab@piro.sakura.ne.jp":"59c1b86f-490b-45a0-8fc0-232ecfb913c0","song-id@losnappas":"9def2107-2568-445d-bcf5-4dbbe22da026","isometric-contributions@jasonlong.me":"8677547d-2f81-4956-93fa-bfa1cb8e5a94","{007919a3-5a2f-486d-84ca-f299f5082027}":"d3dcff7d-02f5-449c-9adb-44e9dad478f4","@github-readme-toc":"c6342e2a-86c0-4227-a226-04a89ef70de7","{1798fd1b-5a24-4135-92d3-9292f659c1e5}":"56242580-3dd8-440b-92a1-6df1eaea7a33","addons-search-detection@mozilla.com":"38f5d7bf-f012-4681-8dab-1d7ca151ed5d","jid1-BoFifL9Vbdl2zQ@jetpack":"82d02664-b409-41b2-b172-5afe2cc1a875","CanvasBlocker@kkapsner.de":"9635a0a7-b3fc-44ac-86bf-9099c217ed2a","{a6c4a591-f1b2-4f03-b3ff-767e5bedf4e7}":"155a1682-d408-4454-83bc-53137c383d7e","{70b4fb8a-ae41-4e66-99f5-0fa89e411d69}":"97f49639-316f-420e-ba2f-da8aa911ec82","http.version.indicator@patrick.dark.name":"62ce4e43-095d-49d8-a5ff-016ecf4a157b","2.0@disconnect.me":"74209c84-8179-41cb-a395-9c8edfc8f532","{74e6405d-2f36-498b-b652-4c65c849eecd}":"48b33b00-6334-490e-977b-91693613a585","keepassxc-browser@keepassxc.org":"7639a08e-fdd5-453e-a9cc-f6aa892d09fd","proxy-failover@mozilla.com":"cf06ef1c-b15e-4604-bcf6-0f286690e9f2","jid1-93WyvpgvxzGATw@jetpack":"635d2cc2-7fc8-41cc-bea6-d347e1f19f2e","{504e1565-ddd7-4fc3-bec3-079ddb622b2c}":"d3573c33-2593-4376-9300-5e3a6b29aa4f","dont-track-me-google@robwu.nl":"cb3e5281-479c-4042-9a13-d0dec809f803","woop-NoopscooPsnSXQ@jetpack":"54eba6b5-2f99-4559-84be-45836b8fa166"}	
 extensions.webidl-api.expose_mock_interface	false	
 findbar.entireword	false	
 findbar.highlightAll	true	
@@ -1727,7 +1739,8 @@ fission.frontend.simulate-messages	false
 fission.highValue.coop.expiration	2592000	
 fission.openNonFissionWindowOption	false	
 fission.preserve_browsing_contexts	true	
-fission.processOriginNames	false	
+fission.processPrivateWindowSiteNames	false	
+fission.processSiteNames	false	
 fission.remoteObjectEmbed	true	
 fission.sessionHistoryInParent	false	
 fission.webContentIsolationStrategy	1	
@@ -2227,6 +2240,7 @@ gfx.downloadable_fonts.validate_variation_tables	true
 gfx.draw-color-bars	false	
 gfx.e10s.font-list.shared	true	
 gfx.e10s.hide-plugins-for-scroll	true	
+gfx.egl.prefer-gles.enabled	false	
 gfx.font-list-omt.enabled	false	
 gfx.font_loader.delay	8000	
 gfx.font_rendering.ahem_antialias_none	false	
@@ -2249,6 +2263,8 @@ gfx.offscreencanvas.enabled	false
 gfx.omta.background-color	true	
 gfx.partialpresent.force	0	
 gfx.perf-warnings.enabled	false	
+gfx.swap-interval.egl	false	
+gfx.swap-interval.glx	true	
 gfx.testing.device-fail	false	
 gfx.testing.device-reset	0	
 gfx.text.disable-aa	false	
@@ -2354,7 +2370,7 @@ identity.fxaccounts.auth.uri	https://api.accounts.firefox.com/v1
 identity.fxaccounts.autoconfig.uri		
 identity.fxaccounts.commands.enabled	true	
 identity.fxaccounts.commands.missed.fetch_interval	86400	
-identity.fxaccounts.commands.missed.last_fetch	1637936081	
+identity.fxaccounts.commands.missed.last_fetch	1639716207	
 identity.fxaccounts.contextParam	fx_desktop_v3	
 identity.fxaccounts.enabled	true	
 identity.fxaccounts.lastSignedInUserHash	5BJRsV/xvxYZYXkAXzm42l+ZpwDXXgoLQ40XyN1ODsA=	
@@ -2371,7 +2387,7 @@ identity.mobilepromo.android	https://www.mozilla.org/firefox/android/?utm_source
 identity.mobilepromo.ios	https://www.mozilla.org/firefox/ios/?utm_source=firefox-browser&utm_medium=firefox-browser&utm_campaign=	
 identity.sendtabpromo.url	https://support.mozilla.org/1/firefox/%VERSION%/%OS%/%LOCALE%/send-tab	
 identity.sync.tokenserver.uri	https://token.services.mozilla.com/1.0/sync/1.5	
-idle.lastDailyNotification	1637930492	
+idle.lastDailyNotification	1639714653	
 idle_period.cross_process_scheduling	true	
 idle_period.during_page_load.min	12	
 idle_period.min	3	
@@ -2396,7 +2412,6 @@ image.http.accept
 image.infer-src-animation.threshold-ms	2000	
 image.jxl.enabled	false	
 image.layout_network_priority	true	
-image.mem.allow_locking_in_content_processes	true	
 image.mem.animated.discardable	true	
 image.mem.animated.use_heap	false	
 image.mem.debug-reporting	false	
@@ -2502,6 +2517,7 @@ javascript.options.discardSystemSource	false
 javascript.options.dump_stack_on_debuggee_would_run	false	
 javascript.options.dynamicImport	true	
 javascript.options.experimental.class_static_blocks	true	
+javascript.options.experimental.enable_change_array_by_copy	false	
 javascript.options.experimental.ergonomic_brand_checks	true	
 javascript.options.experimental.private_fields	true	
 javascript.options.experimental.private_methods	true	
@@ -2562,6 +2578,7 @@ javascript.options.throw_on_debuggee_would_run	false
 javascript.options.use_fdlibm_for_sin_cos_tan	false	
 javascript.options.wasm	true	
 javascript.options.wasm_baselinejit	true	
+javascript.options.wasm_caching	false	
 javascript.options.wasm_optimizingjit	true	
 javascript.options.wasm_simd	true	
 javascript.options.wasm_trustedprincipals	true	
@@ -2579,7 +2596,6 @@ layers.d3d11.enable-blacklist	true
 layers.d3d11.force-warp	false	
 layers.deaa.enabled	true	
 layers.draw-mask-debug	false	
-layers.enable-tiles	false	
 layers.force-active	false	
 layers.force-shmem-tiles	false	
 layers.force-synchronous-resize	true	
@@ -2594,6 +2610,7 @@ layers.gpu-process.stable.frame-threshold	10
 layers.gpu-process.stable.min-uptime-ms	240000	
 layers.gpu-process.startup_timeout_ms	5000	
 layers.iosurfaceimage.recycle-limit	15	
+layers.iosurfaceimage.use-nv12	true	
 layers.low-precision-buffer	false	
 layers.low-precision-resolution	0.25	
 layers.offmainthreadcomposition.async-animations	true	
@@ -2602,9 +2619,6 @@ layers.offmainthreadcomposition.frame-rate	-1
 layers.offmainthreadcomposition.log-animations	false	
 layers.recycle-allocator-rdd	true	
 layers.shared-buffer-provider.enabled	true	
-layers.tile-height	512	
-layers.tile-width	512	
-layers.tiles.adjust	true	
 layout.accessiblecaret.allow_dragging_across_other_caret	true	
 layout.accessiblecaret.always_tilt	false	
 layout.accessiblecaret.caret_shown_when_long_tapping_on_empty_content	false	
@@ -2684,8 +2698,8 @@ layout.css.outline-style-auto.enabled	true
 layout.css.overflow-clip-box.enabled	false	
 layout.css.overflow-logical.enabled	true	
 layout.css.overscroll-behavior.enabled	true	
-layout.css.page-size.enabled	false	
-layout.css.prefers-color-scheme.content-override	2	
+layout.css.page-size.enabled	true	
+layout.css.prefers-color-scheme.content-override	3	
 layout.css.prefers-contrast.enabled	false	
 layout.css.prefixes.animations	true	
 layout.css.prefixes.border-image	true	
@@ -2867,14 +2881,14 @@ media.gmp-gmpopenh264.enabled	true
 media.gmp-gmpopenh264.lastUpdate	1622446490	
 media.gmp-gmpopenh264.version	1.8.1.1	
 media.gmp-gmpopenh264.visible	true	
-media.gmp-manager.buildID	20211125164433	
+media.gmp-manager.buildID	20211214121312	
 media.gmp-manager.cert.checkAttributes	true	
 media.gmp-manager.cert.requireBuiltIn	true	
 media.gmp-manager.certs.1.commonName	aus5.mozilla.org	
 media.gmp-manager.certs.1.issuerName	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	
 media.gmp-manager.certs.2.commonName	aus5.mozilla.org	
 media.gmp-manager.certs.2.issuerName	CN=thawte SSL CA - G2,O="thawte, Inc.",C=US	
-media.gmp-manager.lastCheck	1637995389	
+media.gmp-manager.lastCheck	1639712847	
 media.gmp-manager.url	https://aus5.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml	
 media.gmp-provider.enabled	true	
 media.gmp-widevinecdm.abi	x86_64-gcc3	
@@ -2914,6 +2928,7 @@ media.memory_cache_max_size	8192
 media.memory_caches_combined_limit_kb	524288	
 media.memory_caches_combined_limit_pc_sysmem	5	
 media.mp4.enabled	true	
+media.mp4.sniff_iso_brand	true	
 media.navigator.audio.fake_frequency	1000	
 media.navigator.audio.use_fec	true	
 media.navigator.enabled	true	
@@ -2952,7 +2967,7 @@ media.peerconnection.ice.loopback	false
 media.peerconnection.ice.no_host	false	
 media.peerconnection.ice.obfuscate_host_addresses	true	
 media.peerconnection.ice.obfuscate_host_addresses.blocklist		
-media.peerconnection.ice.proxy_only	false	
+media.peerconnection.ice.proxy_only	true	
 media.peerconnection.ice.proxy_only_if_behind_proxy	false	
 media.peerconnection.ice.relay_only	false	
 media.peerconnection.ice.stun_client_maximum_transmits	7	
@@ -3228,7 +3243,7 @@ network.cookie.cookieBehavior.pbmode	5
 network.cookie.lifetimePolicy	0	
 network.cookie.maxNumber	3000	
 network.cookie.maxPerHost	180	
-network.cookie.move.interval_sec	10	
+network.cookie.move.interval_sec	0	
 network.cookie.quotaPerHost	150	
 network.cookie.rejectForeignWithExceptions.enabled	false	
 network.cookie.sameSite.laxByDefault	false	
@@ -3480,24 +3495,23 @@ network.proxy.autoconfig_retry_interval_max	300
 network.proxy.autoconfig_retry_interval_min	5	
 network.proxy.autoconfig_url		
 network.proxy.autoconfig_url.include_path	false	
-network.proxy.backup.ssl	180.211.248.222 	
-network.proxy.backup.ssl_port	8080	
 network.proxy.default_pac_script_socks_version	4	
 network.proxy.enable_wpad_over_dhcp	true	
 network.proxy.failover_direct	true	
 network.proxy.failover_timeout	1800	
-network.proxy.http	45.250.226.14	
-network.proxy.http_port	3128	
-network.proxy.no_proxies_on		
+network.proxy.http	127.0.0.1	
+network.proxy.http_port	4444	
+network.proxy.no_proxies_on	localhost, 127.0.0.1	
+network.proxy.parse_pac_on_socket_process	false	
 network.proxy.proxy_over_tls	true	
 network.proxy.reload_pac_delay	2000	
-network.proxy.share_proxy_settings	true	
+network.proxy.share_proxy_settings	false	
 network.proxy.socks		
 network.proxy.socks_port	0	
 network.proxy.socks_remote_dns	false	
 network.proxy.socks_version	5	
-network.proxy.ssl	45.250.226.14	
-network.proxy.ssl_port	3128	
+network.proxy.ssl	127.0.0.1	
+network.proxy.ssl_port	4445	
 network.proxy.testing_localhost_is_secure_when_hijacked	false	
 network.proxy.type	0	
 network.psl.onUpdate_notify	false	
@@ -3545,6 +3559,8 @@ network.trr.odoh.min_ttl	60
 network.trr.odoh.proxy_uri		
 network.trr.odoh.target_host		
 network.trr.odoh.target_path		
+network.trr.padding	true	
+network.trr.padding.length	128	
 network.trr.request_timeout_mode_trronly_ms	30000	
 network.trr.request_timeout_ms	1500	
 network.trr.retry-timeout-ms	125	
@@ -3559,6 +3575,7 @@ network.trr.uri	https://mozilla.cloudflare-dns.com/dns-query
 network.trr.useGET	false	
 network.trr.wait-for-confirmation	false	
 network.trr.wait-for-portal	false	
+network.url.max-length	0	
 network.url.useDefaultURI	false	
 network.websocket.allowInsecureFromHTTPS	false	
 network.websocket.auto-follow-http-redirects	false	
@@ -3570,6 +3587,7 @@ network.websocket.timeout.close	20
 network.websocket.timeout.open	20	
 network.websocket.timeout.ping.request	0	
 network.websocket.timeout.ping.response	10	
+nglayout.debug.disable_xul_cache	false	
 nglayout.debug.invalidation	false	
 nglayout.debug.paint_flashing	false	
 nglayout.debug.paint_flashing_chrome	false	
@@ -3623,7 +3641,7 @@ permissions.fullscreen.allowed	false
 permissions.isolateBy.privateBrowsing	true	
 permissions.isolateBy.userContext	false	
 permissions.manager.defaultsUrl	resource://app/defaults/permissions	
-places.database.lastMaintenance	1637575183	
+places.database.lastMaintenance	1639538963	
 places.forgetThisSite.clearByBaseDomain	true	
 places.frecency.bookmarkVisitBonus	75	
 places.frecency.defaultBucketWeight	10	
@@ -3725,12 +3743,13 @@ privacy.documentCookies.maxage	0
 privacy.donottrackheader.enabled	true	
 privacy.dynamic_firstparty.limitForeign	false	
 privacy.dynamic_firstparty.use_site	true	
-privacy.file_unique_origin	true	
 privacy.firstparty.isolate	false	
 privacy.firstparty.isolate.block_post_message	false	
 privacy.firstparty.isolate.restrict_opener_access	true	
 privacy.firstparty.isolate.use_site	false	
 privacy.fuzzyfox.clockgrainus	100	
+privacy.globalprivacycontrol.enabled	false	
+privacy.globalprivacycontrol.functionality.enabled	false	
 privacy.history.custom	true	
 privacy.item.cookies	false	
 privacy.panicButton.enabled	true	
@@ -3748,7 +3767,7 @@ privacy.popups.usecustom	true
 privacy.purge_trackers.consider_entity_list	false	
 privacy.purge_trackers.date_in_cookie_database	0	
 privacy.purge_trackers.enabled	true	
-privacy.purge_trackers.last_purge	1637930494791	
+privacy.purge_trackers.last_purge	1639714653479	
 privacy.purge_trackers.logging.level	Error	
 privacy.purge_trackers.max_purge_count	100	
 privacy.query_stripping.allow_list		
@@ -3777,6 +3796,8 @@ privacy.restrict3rdpartystorage.heuristic.recently_visited_time	600
 privacy.restrict3rdpartystorage.heuristic.redirect	true	
 privacy.restrict3rdpartystorage.heuristic.window_open	true	
 privacy.restrict3rdpartystorage.partitionedHosts	accounts.google.com/o/oauth2/,d35nw2lg0ahg0v.cloudfront.net/,datastudio.google.com/embed/reporting/,d3qlaywcwingl6.cloudfront.net/	
+privacy.restrict3rdpartystorage.rollout.preferences.TCPToggleInStandard	false	
+privacy.restrict3rdpartystorage.rollout.preferences.learnMoreURLSuffix	total-cookie-protection	
 privacy.restrict3rdpartystorage.url_decorations	fbclid	
 privacy.restrict3rdpartystorage.userInteractionRequiredForHosts		
 privacy.sanitize.migrateFx3Prefs	false	
@@ -3871,6 +3892,7 @@ security.default_personal_cert	Ask Every Time
 security.dialog_enable_delay	1000	
 security.directory		
 security.disallow_privileged_data_subdocuments_loads	true	
+security.disallow_privileged_https_stylesheet_loads	true	
 security.disallow_privileged_https_subdocuments_loads	true	
 security.enterprise_roots.enabled	false	
 security.external_protocol_requires_permission	true	
@@ -3909,12 +3931,12 @@ security.pki.sha1_enforcement_level	3
 security.protectionspopup.recordEventTelemetry	true	
 security.remember_cert_checkbox_default_setting	true	
 security.remote_settings.crlite_filters.bucket	security-state	
-security.remote_settings.crlite_filters.checked	1637995372	
+security.remote_settings.crlite_filters.checked	1639753557	
 security.remote_settings.crlite_filters.collection	cert-revocations	
 security.remote_settings.crlite_filters.enabled	false	
 security.remote_settings.crlite_filters.signer	onecrl.content-signature.mozilla.org	
 security.remote_settings.intermediates.bucket	security-state	
-security.remote_settings.intermediates.checked	1637995372	
+security.remote_settings.intermediates.checked	1639753256	
 security.remote_settings.intermediates.collection	intermediates	
 security.remote_settings.intermediates.downloads_per_poll	5000	
 security.remote_settings.intermediates.enabled	true	
@@ -3970,12 +3992,12 @@ security.webauth.webauthn_enable_softtoken	false
 security.webauth.webauthn_enable_usbtoken	true	
 security.xfocsp.errorReporting.automatic	false	
 security.xfocsp.errorReporting.enabled	true	
-services.blocklist.addons-mlbf.checked	1637995372	
+services.blocklist.addons-mlbf.checked	1639753256	
 services.blocklist.addons.checked	0	
 services.blocklist.addons.collection	addons	
 services.blocklist.addons.signer	remote-settings.content-signature.mozilla.org	
 services.blocklist.bucket	blocklists	
-services.blocklist.gfx.checked	1637995372	
+services.blocklist.gfx.checked	1639753256	
 services.blocklist.gfx.collection	gfx	
 services.blocklist.gfx.signer	remote-settings.content-signature.mozilla.org	
 services.blocklist.pinning.checked	1626077241	
@@ -3986,47 +4008,47 @@ services.common.log.logger.rest.request	Debug
 services.common.log.logger.rest.response	Debug	
 services.common.log.logger.tokenserverclient	Debug	
 services.common.uptake.sampleRate	1	
-services.settings.clock_skew_seconds	912	
+services.settings.clock_skew_seconds	0	
 services.settings.default_bucket	main	
-services.settings.last_etag	"1637981916440"	
-services.settings.last_update_seconds	1637995372	
-services.settings.main.anti-tracking-url-decoration.last_check	1637995372	
+services.settings.last_etag	"1639753090830"	
+services.settings.last_update_seconds	1639753557	
+services.settings.main.anti-tracking-url-decoration.last_check	1639753256	
 services.settings.main.cfr-fxa.last_check	1633604314	
-services.settings.main.cfr.last_check	1637995372	
-services.settings.main.doh-config.last_check	1637995372	
-services.settings.main.doh-providers.last_check	1637995372	
-services.settings.main.fxmonitor-breaches.last_check	1637995372	
-services.settings.main.hijack-blocklists.last_check	1637995372	
-services.settings.main.language-dictionaries.last_check	1637995372	
-services.settings.main.message-groups.last_check	1637995372	
-services.settings.main.nimbus-desktop-defaults.last_check	1637995372	
-services.settings.main.nimbus-desktop-experiments.last_check	1637995372	
-services.settings.main.normandy-recipes-capabilities.last_check	1637995372	
-services.settings.main.partitioning-exempt-urls.last_check	1637995372	
-services.settings.main.password-recipes.last_check	1637995372	
-services.settings.main.password-rules.last_check	1637995372	
-services.settings.main.personality-provider-models.last_check	1637995372	
-services.settings.main.personality-provider-recipe.last_check	1637995372	
-services.settings.main.pioneer-study-addons-v1.last_check	1637995372	
-services.settings.main.public-suffix-list.last_check	1637995372	
-services.settings.main.query-stripping.last_check	1637995372	
-services.settings.main.search-config.last_check	1637995372	
-services.settings.main.search-default-override-allowlist.last_check	1637995372	
-services.settings.main.search-telemetry.last_check	1637995372	
-services.settings.main.sites-classification.last_check	1637995372	
-services.settings.main.tippytop.last_check	1637995372	
-services.settings.main.top-sites.last_check	1637995372	
-services.settings.main.url-classifier-skip-urls.last_check	1637995372	
-services.settings.main.websites-with-shared-credential-backends.last_check	1637995372	
-services.settings.main.whats-new-panel.last_check	1637995372	
+services.settings.main.cfr.last_check	1639753256	
+services.settings.main.doh-config.last_check	1639753256	
+services.settings.main.doh-providers.last_check	1639753256	
+services.settings.main.fxmonitor-breaches.last_check	1639753256	
+services.settings.main.hijack-blocklists.last_check	1639753256	
+services.settings.main.language-dictionaries.last_check	1639753256	
+services.settings.main.message-groups.last_check	1639753256	
+services.settings.main.nimbus-desktop-defaults.last_check	1639753256	
+services.settings.main.nimbus-desktop-experiments.last_check	1639753256	
+services.settings.main.normandy-recipes-capabilities.last_check	1639753256	
+services.settings.main.partitioning-exempt-urls.last_check	1639753256	
+services.settings.main.password-recipes.last_check	1639753256	
+services.settings.main.password-rules.last_check	1639753256	
+services.settings.main.personality-provider-models.last_check	1639753256	
+services.settings.main.personality-provider-recipe.last_check	1639753256	
+services.settings.main.pioneer-study-addons-v1.last_check	1639753256	
+services.settings.main.public-suffix-list.last_check	1639753256	
+services.settings.main.query-stripping.last_check	1639753256	
+services.settings.main.search-config.last_check	1639753256	
+services.settings.main.search-default-override-allowlist.last_check	1639753256	
+services.settings.main.search-telemetry.last_check	1639753256	
+services.settings.main.sites-classification.last_check	1639753256	
+services.settings.main.tippytop.last_check	1639753256	
+services.settings.main.top-sites.last_check	1639753256	
+services.settings.main.url-classifier-skip-urls.last_check	1639753256	
+services.settings.main.websites-with-shared-credential-backends.last_check	1639753256	
+services.settings.main.whats-new-panel.last_check	1639753256	
 services.settings.poll_interval	86400	
 services.settings.security.onecrl.bucket	security-state	
-services.settings.security.onecrl.checked	1637995372	
+services.settings.security.onecrl.checked	1639753256	
 services.settings.security.onecrl.collection	onecrl	
 services.settings.security.onecrl.signer	onecrl.content-signature.mozilla.org	
 services.settings.server	https://firefox.settings.services.mozilla.com/v1	
 services.sync.addons.ignoreUserEnabledChanges	false	
-services.sync.addons.lastSync	1637903629.27	
+services.sync.addons.lastSync	1639495563.31	
 services.sync.addons.syncID	rCqtCkq7xBIa	
 services.sync.addons.trustedSourceHostnames	addons.mozilla.org	
 services.sync.addresses.lastSync	0	
@@ -4035,8 +4057,8 @@ services.sync.client.GUID	kmrje3PA1S8a
 services.sync.client.syncID	FoD2GfZO0ryW	
 services.sync.clients.devices.desktop	1	
 services.sync.clients.devices.mobile	0	
-services.sync.clients.lastRecordUpload	1637995412	
-services.sync.clients.lastSync	1637995412.11	
+services.sync.clients.lastRecordUpload	1639736900	
+services.sync.clients.lastSync	1639736900.9	
 services.sync.clients.syncID	k7MW74dxdUcF	
 services.sync.creditcards.lastSync	0	
 services.sync.creditcards.syncID	fYB8PBztyLER	
@@ -4061,12 +4083,12 @@ services.sync.engine.prefs.modified	false
 services.sync.engine.tabs	true	
 services.sync.engine.tabs.filteredUrls	^(about:.*|resource:.*|chrome:.*|file:.*|blob:.*|moz-extension:.*)$	
 services.sync.extension-storage.skipPercentageChance	50	
-services.sync.forms.lastSync	1637995413.00	
+services.sync.forms.lastSync	1639754930.16	
 services.sync.forms.syncID	ifWneEfXgsGj	
-services.sync.globalScore	78	
-services.sync.lastPing	1637932474	
-services.sync.lastSync	Sat Nov 27 2021 06:43:33 GMT+0000 (GMT)	
-services.sync.lastTabFetch	1637946903	
+services.sync.globalScore	13	
+services.sync.lastPing	1639676660	
+services.sync.lastSync	Fri Dec 17 2021 15:28:50 GMT+0000 (GMT)	
+services.sync.lastTabFetch	1639754930	
 services.sync.lastversion	1.91.0	
 services.sync.log.appender.console	Fatal	
 services.sync.log.appender.dump	Error	
@@ -4078,7 +4100,7 @@ services.sync.log.cryptoDebug	false
 services.sync.log.logger	Debug	
 services.sync.log.logger.engine	Debug	
 services.sync.maxResyncs	1	
-services.sync.nextSync	1637999013	
+services.sync.nextSync	1639758530	
 services.sync.prefs.dangerously_allow_arbitrary	false	
 services.sync.prefs.lastSync	1637859452.55	
 services.sync.prefs.sync.accessibility.blockautorefresh	true	
@@ -4195,7 +4217,7 @@ services.sync.scheduler.idleTime	300
 services.sync.scheduler.immediateInterval	90	
 services.sync.sendVersionInfo	true	
 services.sync.syncedTabs.showRemoteIcons	true	
-services.sync.tabs.lastSync	1637995412.70	
+services.sync.tabs.lastSync	1639754929.84	
 services.sync.tabs.syncID	_efEFvHZSDoa	
 services.sync.telemetry.maxPayloadCount	500	
 services.sync.telemetry.submissionInterval	43200	
@@ -4293,7 +4315,7 @@ toolkit.scrollbox.verticalScrollDistance	3
 toolkit.shutdown.fastShutdownStage	1	
 toolkit.shutdown.lateWriteChecksStage	3	
 toolkit.sqlitejsm.loglevel	Error	
-toolkit.startup.last_success	1637995365	
+toolkit.startup.last_success	1639736866	
 toolkit.startup.max_resumed_crashes	3	
 toolkit.tabbox.switchByScrolling	false	
 toolkit.telemetry.archive.enabled	true	
@@ -4308,7 +4330,7 @@ toolkit.telemetry.geckoview.streaming	false
 toolkit.telemetry.ipcBatchTimeout	2000	
 toolkit.telemetry.newProfilePing.enabled	true	
 toolkit.telemetry.pioneer-new-studies-available	true	
-toolkit.telemetry.previousBuildID	20211125164433	
+toolkit.telemetry.previousBuildID	20211214121312	
 toolkit.telemetry.reportingpolicy.firstRun	false	
 toolkit.telemetry.server	https://incoming.telemetry.mozilla.org	
 toolkit.telemetry.server_owner	Mozilla	
@@ -4464,7 +4486,6 @@ widget.gtk.alt-theme.dark	true
 widget.gtk.alt-theme.scrollbar	false	
 widget.gtk.alt-theme.scrollbar_active	true	
 widget.gtk.alt-theme.selection	true	
-widget.gtk.follow-firefox-theme	true	
 widget.non-native-theme.always-high-contrast	false	
 widget.non-native-theme.enabled	true	
 widget.non-native-theme.gtk.scrollbar.allow-buttons	false	
