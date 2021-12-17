@@ -6,7 +6,7 @@
 
 : '
 Invoke with root device, mount point, strata name and shell path.
-E.g: "broot.sh /dev/sda1 /mnt/bedrock_chroot gentoo /bin/bash"
+E.g: "script.sh /dev/sda1 /mnt/bedrock_chroot gentoo /bin/bash"
 
 If no arguments are passed then the values are obtained from
 interactive user input.
